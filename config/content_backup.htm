@@ -191,19 +191,40 @@ end</pre>
 <script>
 var winkVideoData = {
   dataVersion: 1,
-  frameRate: 20,
-  buttonFrameLength: 10,
-  buttonFrameOffset: 5,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
   frameStops: {
+    "2": [
+      { type: "gotoframe", rect: { x: 333, y: 224, width: 28, height: 13 }, target: 3 },
+    ],
+    "16": [
+      { type: "gotoframe", rect: { x: 435, y: 170, width: 28, height: 13 }, target: 17 },
+      { type: "gotoframe", rect: { x: 310, y: 168, width: 28, height: 13 }, target: 2 },
+    ],
+    "41": [
+      { type: "gotoframe", rect: { x: 518, y: 338, width: 28, height: 13 }, target: 42 },
+      { type: "gotoframe", rect: { x: 426, y: 339, width: 28, height: 13 }, target: 16 },
+    ],
+    "53": [
+      { type: "gotoframe", rect: { x: 480, y: 276, width: 28, height: 13 }, target: 54 },
+      { type: "gotoframe", rect: { x: 369, y: 273, width: 28, height: 13 }, target: 41 },
+    ],
+    "64": [
+      { type: "gotoframe", rect: { x: 257, y: 260, width: 28, height: 13 }, target: 53 },
+    ],
   },
 };
 </script>
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData2" height="600" loop="loop" muted="" playsinline="" width="900">
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="600" loop="loop" muted="" playsinline="" width="900">
 <source src="./../downloads/wink下載.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
-<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
-<div class="winkVideoControlBarProgressLeftClass"></div>
-<div class="winkVideoControlBarProgressEmptyMiddleClass"></div>
+<div class="winkVideoControlBarClass"></div>
+<div class="winkVideoControlBarClass"><button class="winkVideoControlBarPauseButtonClass"></button>
+<h1 class="winkVideoControlBarProgressEmptyMiddleClass">HW1進度</h1>
+<h2 class="winkVideoControlBarProgressEmptyMiddleClass">ons</h2>
+<p></p>
+<h2 class="winkVideoControlBarProgressEmptyMiddleClass">inv</h2>
 <div class="winkVideoControlBarProgressRightClass"></div>
 <div class="winkVideoControlBarProgressFilledMiddleClass"></div>
 <div class="winkVideoControlBarProgressThumbClass"></div>
